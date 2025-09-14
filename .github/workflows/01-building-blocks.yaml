@@ -1,8 +1,8 @@
 name: 01 - Building Blocks
 
-on: Push
+on: push
 
-Jobs:
+jobs:
     echo-hello:
         runs-on: ubuntu-latest
         steps:
@@ -16,4 +16,4 @@ Jobs:
                   echo "It is successful!"
                   exit 0
             - name: Say Goodbye
-              run: echo "Goodbye, World!igt"
+              run: echo
