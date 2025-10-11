@@ -9,4 +9,13 @@ jobs:
             - name: Show-OS
               run: |
                 echo "This is running on Ubuntu WSL"
+
+                echo "Runner OS: $RUNNER_OS"
+    windows-echo:
+        runs-on: windows-latest
+        steps:
+            - name: Show-OS
+              run: |
+                echo "This is running on Windows server"
+
                 echo "Runner OS: $RUNNER_OS"
