@@ -1,6 +1,6 @@
 name: 03 - Workflow Runners
 
-on: push
+on: workflow_dispatch
 
 jobs:
     ubuntu-echo:
@@ -20,4 +20,5 @@ jobs:
                 echo "This is running on Windows server"
 
                 echo "Runner OS: $RUNNER_OS"
+
 
