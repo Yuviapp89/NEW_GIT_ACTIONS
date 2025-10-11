@@ -1,6 +1,6 @@
 name: 01 - Building Blocks
 
-on: push
+on: workflow_dispatch
 
 jobs:
     echo-hello:
@@ -16,4 +16,5 @@ jobs:
                   echo "It is successful!"
                   exit 1
             - name: Say Goodbye
+
               run: echo
