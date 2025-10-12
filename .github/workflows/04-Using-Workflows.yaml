@@ -11,7 +11,7 @@ jobs:
       - name: setup node
         uses: actions/setup-node@v2
         with:
-          node-version: '14'
+          node-version: '18'
       - name: Install dependencies
         run: npm ci
         working-directory: ./.github/workflows/04-Using-Workflows/react-app
