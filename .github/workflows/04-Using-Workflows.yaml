@@ -14,4 +14,4 @@ jobs:
           node-version: '18'
       - name: Install Dependencies Needed
         run: npm ci
-        working-directory: ./.github/workflows/04-Using-Workflows/react-app
+        working-directory: ./react-app
