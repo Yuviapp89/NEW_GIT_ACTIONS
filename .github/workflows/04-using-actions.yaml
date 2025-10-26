@@ -3,16 +3,9 @@ name: 04-using-actions
 on: 
   workflow_dispatch:
 
-env:
-  MY_WORKFLOW_VAR: "Workflow Level Variable"
-  MY_OVERWRITTEN_VAR: "Workflow Level Overwritten Variable"
-
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      MY_JOB_VAR: "Job Level Variable"
-      MY_JOB_OVERWRITTEN_VAR: "Job Level Overwritten Variable"
     defaults:
         run:
           working-directory: ./04-using-actions/react-app
