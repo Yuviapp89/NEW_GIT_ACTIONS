@@ -1,7 +1,6 @@
 name: 02-workflow-events
 
 on: 
-    pull_request:
     workflow_dispatch:
 
 jobs:
@@ -11,3 +10,4 @@ jobs:
             - name: Echo a message
 
               run: echo "I have been triggered by the event ${{ github.event_name }}."
+
