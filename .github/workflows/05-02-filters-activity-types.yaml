@@ -1,0 +1,16 @@
+name: 05-02-filters-activity-types
+
+on:
+    pull_request:
+        types:
+            - closed
+        branches:
+            - main
+jobs:
+    echo:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Echo PR Activity 2
+              run: echo "This pull request was closed."
+    
+ 
