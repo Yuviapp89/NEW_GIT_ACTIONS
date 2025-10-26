@@ -33,7 +33,7 @@ jobs:
                     echo "Variable : ${{ vars.MY_VARIABLE }}"
             - name: Print Environment Variables
               env:
-                MY_JOB_OVERWRITTEN_VAR: "Job Level Overwritten Variable"
+                MY_JOB_OVERWRITTEN_VAR: "Job Level Overwritten Variable1"
               run: |
                     echo "Workflow Env Var: $MY_WORKFLOW_VAR"
                     echo "Job Env Var: $MY_JOB_VAR"
