@@ -11,7 +11,7 @@ jobs:
     echo:
         runs-on: ubuntu-latest
         steps:
-            - name: Echo PR Activity
+            - name: Echo PR Activity 2
               run: echo "This pull request was either opened or updated."
     
  
