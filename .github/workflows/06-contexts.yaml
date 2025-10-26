@@ -8,10 +8,16 @@ on:
           debug:
             type: boolean
             default: false
+env:
+  MY_WORKFLOW_VAR: "Workflow Level Variable"
+  MY_OVERWRITTEN_VAR: "Workflow Level Overwritten Variable"
 
 jobs:
     echo-data:
         runs-on: ubuntu-latest
+        env:
+            MY_JOB_VAR: "Job Level Variable"
+            MY_JOB_OVERWRITTEN_VAR: "Job Level Overwritten Variable"
         steps:
             - name: Display Information
               run: |
@@ -25,3 +31,11 @@ jobs:
             - name: Retrieve Variables
               run: |
                     echo "Variable : ${{ vars.MY_VARIABLE }}"
+            - name: Print Environment Variables
+              env:
+                MY_JOB_OVERWRITTEN_VAR: "Job Level Overwritten Variable"
+              run: |
+                    echo "Workflow Env Var: $MY_WORKFLOW_VAR"
+                    echo "Job Env Var: $MY_JOB_VAR"
+                    echo "Overwritten Var: $MY_OVERWRITTEN_VAR"
+                    echo "Overwritten Job Var: $MY_JOB_OVERWRITTEN_VAR"
