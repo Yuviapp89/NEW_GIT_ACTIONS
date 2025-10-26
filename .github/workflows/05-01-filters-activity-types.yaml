@@ -1,0 +1,17 @@
+name: 05-01-filters-activity-types
+
+on:
+    pull_request:
+        types:
+            - opened
+            - synchronize
+        branches:
+            - main
+jobs:
+    echo:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Echo PR Activity
+              run: echo "This pull request was either opened or updated."
+    
+ 
