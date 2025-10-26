@@ -38,4 +38,4 @@ jobs:
                     echo "Workflow Env Var: ${{ env.MY_WORKFLOW_VAR}}"
                     echo "Job Env Var: ${{ env.MY_JOB_VAR}}"
                     echo "Overwritten Var: ${{ env.MY_OVERWRITTEN_VAR}}"
-                    echo "Overwritten Job Var: ${{ env.MY_JOB_OVERWRITTEN_VAR}}"
+                    echo "Overwritten Job Variable: ${{ env.MY_JOB_OVERWRITTEN_VAR}}"
