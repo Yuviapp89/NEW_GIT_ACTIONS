@@ -1,9 +1,13 @@
 name: 06-contexts
-run-name: Display Context Information ${{runner.os}}
+run-name: 06-context | DEBUG - ${{ inputs.debug }}
 
 on: 
     push:
     workflow_dispatch:
+       inputs:
+          debug:
+            type: boolean
+            default: false
 
 jobs:
     echo-data:
