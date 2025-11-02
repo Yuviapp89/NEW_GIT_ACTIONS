@@ -13,12 +13,12 @@ env:
        env:
            JOB_VAR: "I am a job env variable"
            OVERWRITTEN: 'I have been overwritten'
-       steps:
+    steps:
          - name: Echo Variables
            env:
               STEP_VAR: "I am a step env variable"
               step_var2: "I am another step env variable"
-            run: |
+           run: |
               echo "STEP ENV var : ${{ env.STEP_VAR }}"
               echo "step_var2: $step_var2"
               echo "JOB ENV var : ${{ env.JOB_VAR }}"
@@ -27,5 +27,5 @@ env:
          - name: overwritten
            env:
                 OVERWRITTEN: 'I am the last overwritten at the step level'
-            run: |
+        run: |
               echo "overwritten var : ${{ env.OVERWRITTEN }}"
