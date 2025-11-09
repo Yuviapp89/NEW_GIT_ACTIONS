@@ -4,7 +4,7 @@ on:
     workflow_dispatch:
 
 jobs:
-    echo:
+    echo1:
        runs-on: ubuntu-latest
        steps:
          - name: Failing step
@@ -20,4 +20,5 @@ jobs:
            run: I will always print, except when the workflow is cancelled
          - name: It will be cancelled
            if: ${{ cancelled() }}
+
            run: I will print if previous step cancelled
