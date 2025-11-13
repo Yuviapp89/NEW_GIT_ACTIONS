@@ -35,7 +35,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: run unit test
-              run: "run echo tests"
+              run: echo "run echo tests"
               if : ${{inputs.pass-unit-tests}}
                exit 0
     
