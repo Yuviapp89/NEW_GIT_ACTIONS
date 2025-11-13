@@ -20,5 +20,4 @@ jobs:
            run: I will always print, except when the workflow is cancelled
          - name: It will be cancelled
            if: ${{ cancelled() }}
-
            run: I will print if previous step cancelled
