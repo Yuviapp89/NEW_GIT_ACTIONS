@@ -1,7 +1,6 @@
 name: 08 - variables
 
 on:
-    push:
     workflow_dispatch:
 env:
     WORKFLOW_VAR: "I am a workflow env variable"
@@ -28,4 +27,5 @@ jobs:
            env:
                 OVERWRITTEN: 'I am the last overwritten at the step level'
            run: |
+
               echo "overwritten var : ${{ env.OVERWRITTEN }}"
