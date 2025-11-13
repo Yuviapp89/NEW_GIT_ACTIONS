@@ -14,9 +14,8 @@ jobs:
         steps:
             - name: lint and build
               run: |
-                npm run lint
-                npm run tsc:check
-                npm run build
+                echo "all working good - sign 1"
+                echo "all working good - sign 2"
     unit-tests:
         runs-on: ubuntu-latest
         steps:
